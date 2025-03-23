@@ -66,7 +66,9 @@ export default function CodeEditor() {
         code,
       });
       setOutput(response.data.output);
-    } catch (error) {
+    } 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars 
+    catch (error) {
       setOutput("Execution failed. Please check your code.");
     } finally {
       setIsRunning(false);
